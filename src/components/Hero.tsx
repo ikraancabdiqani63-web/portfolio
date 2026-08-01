@@ -2,13 +2,15 @@ import profile from "../assets/profile.jpg";
 
 function Hero() {
   return (
-    <section id="home" className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto min-h-screen flex items-center justify-between px-8">
+    <section className="min-h-screen flex items-center bg-slate-900">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Side */}
-        <div className="max-w-xl">
-          <p className="text-gray-400 text-lg">Hello, I'm</p>
+        <div className="px-6 md:px-12 lg:px-20">
+          <p className="text-base sm:text-lg text-gray-400">Hello, I'm</p>
 
-          <h1 className="text-6xl font-bold mt-2">Ikraan Abdiqani</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+            Ikraan Abdiqani
+          </h1>
 
           <h2 className="text-3xl text-cyan-400 font-semibold mt-4">
             Frontend React Developer
@@ -32,8 +34,7 @@ function Hero() {
         <div>
           <img
             src={profile}
-            alt="Profile"
-            className="w-96 h-96 rounded-full object-cover border-4 border-cyan-400"
+            className="w-56 sm:w-64 md:w-80 lg:w-96 h-auto rounded-full object-cover"
           />
         </div>
       </div>

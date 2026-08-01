@@ -9,27 +9,32 @@ function Contact() {
         <p className="text-gray-400 text-center mt-4">
           Feel free to contact me for opportunities or collaborations.
         </p>
-
         <div className="grid md:grid-cols-2 gap-12 mt-12">
           {/* Left Side */}
           <div className="space-y-6">
-            <div className="flex items-center gap-4 bg-slate-900 p-5 rounded-xl">
-              <FaEnvelope className="text-cyan-400 text-2xl" />
-              <div>
-                <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-400">ikraancabdiqani63@gmail.com</p>
-              </div>
-            </div>
-
+          <div className="flex items-center gap-4 bg-slate-900 p-5 rounded-xl">
+  <FaEnvelope className="text-cyan-400 text-2xl" />
+  <div>
+    <h3 className="font-semibold">Email</h3>
+    <a
+      href="mailto:ikraancabdiqani63@gmail.com"
+      className="text-gray-400 hover:text-cyan-400"
+    >
+      ikraancabdiqani63@gmail.com
+    </a>
+  </div>
+</div>
             <div className="flex items-center gap-4 bg-slate-900 p-5 rounded-xl">
               <FaGithub className="text-cyan-400 text-2xl" />
               <div>
-                <h3 className="font-semibold">GitHub</h3>
+                <h3 className="font-semibold">Github</h3>
                 <a
-                  href="mailto:ikraancabdiqani63@gmail.com"
+                  href="https://github.com/ikraancabdiqani63-web"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyan-400"
                 >
-                  ikraancabdiqani63@gmail.com
+                  ikraancabdiqani63-web
                 </a>
               </div>
             </div>
@@ -76,6 +81,7 @@ function Contact() {
           </form>
         </div>
       </div>
+    
     </section>
   );
 }
